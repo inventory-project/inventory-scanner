@@ -25,7 +25,7 @@ SECRET_KEY = '26qc&owzzsra%5iw*50mdwi7-a0d11!2&+#5&yus*8kxy_6r3j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'inventoryproject.pythonanywhere.com']
 
 
 # Application definition
