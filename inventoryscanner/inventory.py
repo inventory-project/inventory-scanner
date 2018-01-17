@@ -1,5 +1,5 @@
 import numpy as np
-import scipy.stats as sct
+#import scipy.stats as sct
 
 class Item:
 
@@ -69,7 +69,8 @@ class Item:
 
     def _find_k(self):
         if self.service_measure == 'p1':
-            return sct.norm.isf(q=(1-self.service),loc=0,scale=1)
+            #return sct.norm.isf(q=(1-self.service),loc=0,scale=1)
+            return 1.64
         elif self.service_measure == 'p2':
             guk = min((1 - self.service) * self.order_quantity / self.dl_std,5)
             z = np.sqrt(np.log(25/(guk**2)))
